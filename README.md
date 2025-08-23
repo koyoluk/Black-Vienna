@@ -32,7 +32,6 @@ black-vienna-game/
 
 - Node.js (version 14 or higher)
 - npm or yarn
-- A running Black Vienna backend server
 
 ### Installation
 
