@@ -9,7 +9,7 @@ Black Vienna is a deduction game where players attempt to identify three conspir
 ## 🏗️ Project Structure
 
 ```
-black-vienna-frontend/
+black-vienna-game/
 ├── public/
 ├── src/
 │   ├── components/
@@ -39,31 +39,39 @@ black-vienna-frontend/
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd black-vienna-frontend
+   cd black-vienna-backend
    ```
 
-2. **Install dependencies**
+2. **Add virtual environment in backend**
    ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   
+3. **Install all required dependencies**
+   ```bash
+   python3 app.py
+
+4. **Install dependencies in frontend**
+   ```bash
+   cd ../game
    npm install
-   # or
-   yarn install
    ```
 
-3. **Update Socket.IO connection**
+5. **Update Socket.IO connection**
    
    Edit `src/hooks/useSocket.js` and update the server URL:
    ```javascript
    const newSocket = io('http://localhost:5001'); // Change to your server URL
    ```
 
-4. **Start the development server**
+6. **Start the development server**
    ```bash
    npm start
    # or
    yarn start
    ```
 
-5. **Open your browser**
+7. **Open your browser**
    
    Navigate to `http://localhost:3000`
 
